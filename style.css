@@ -45,3 +45,11 @@ background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
 }
+
+.image{
+background-image:url("./images/image-victor.jpg");
+background-repeat: no-repeat;
+background-position: bottom;
+height: 250px;
+border-radius: 100px;
+}
