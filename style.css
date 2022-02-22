@@ -8,6 +8,8 @@ body, html {
     background-repeat: no-repeat, no-repeat;
     background-attachment: fixed;
     background-size: 100% !important;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
 }
 
 .container {
@@ -26,9 +28,9 @@ background-color: #fff;
 overflow: hidden;
 }
 
-.pattern, .user-info, .social-media {
+.pattern, .user-info {
 width:  100%;
-height: 33.3%;
+height: 38%;
 }
 
 .social-media{
@@ -37,6 +39,9 @@ flex-direction: row;
 justify-content: space-evenly;
 justify-items: center;
 align-items: center;
+color: hsl(0, 0%, 59%);
+border-top: solid 1px gray;
+height: 24%;
 }
 
 .pattern{
@@ -44,12 +49,36 @@ background-image: url("./images/bg-pattern-card.svg");
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
+position: relative;
 }
 
-.image{
-background-image:url("./images/image-victor.jpg");
-background-repeat: no-repeat;
-background-position: bottom;
-height: 250px;
-border-radius: 100px;
+.imagem-usuario img{
+height: 150px;
+width: auto;
+border-radius: 50%;
+border: solid 4px #fff;
+display: flex;
+position: absolute;
+top: 140px;
+right: calc(50% - 79px);
 }
+
+.user-info{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .card {
+  width: 90%;
+  height: 50%;
+    }
+
+    .imagem-usuario img {
+    height: 90px;
+    top: 100px;
+    right: 130px;
+    }
+  }
